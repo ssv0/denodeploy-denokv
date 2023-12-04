@@ -1,5 +1,4 @@
 const settingsShare = Deno.env.get("SETTINGSSHARE");
-const listenToPort = Deno.env.get("PORT");
 import * as Earthstar from "https://deno.land/x/earthstar/mod.ts";
 
 new Earthstar.Server([
@@ -13,5 +12,5 @@ new Earthstar.Server([
 			});
 		},
 	}),  new Earthstar.ExtensionSyncWeb(),
-],{ port: listenToPort }
+]
 );
