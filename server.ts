@@ -3,7 +3,6 @@ import * as Earthstar from "https://deno.land/x/earthstar@v10.2.2/mod.ts";
 const kv = await Deno.openKv();
 const listenToPort = 8081 // probably irrelevant for deno deploy
 
-import * as Earthstar from "../../www/lib/earthstar.deno.js";
 
 let logger = new Earthstar.Logger("storage driver denoKVStorage", "gold");
 
